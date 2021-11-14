@@ -47,7 +47,7 @@
         <h1 class="main-title">Grocery Shop</h1>
         <!-- Products -->
         <div class="product-container">
-            <section class="latest-product-feature">
+            <section style="width: 100%;"  class="latest-product-feature">
                 <!-- loop the products fetched to display in home -->
                 <?php foreach ($products as $row) { ?>
                 <div style="margin-left: 3px;" class="product-item">

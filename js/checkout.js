@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     addToCartNumber()
 })
 
-
 //this function never run on event listener, Load on windows Load.
 function addToCartNumber() {
     let addToCartNumbers = localStorage.getItem('cartNumbers')

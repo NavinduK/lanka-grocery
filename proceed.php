@@ -114,7 +114,7 @@ if (isset($_POST['submit'])) {
                                 <h4>Leave empty for cash on delivery</h2>
                                 <div class="form-control">
                                     <label for="userperemail">Card Number:</label>
-                                    <input type="text" id="cardno" name="email">
+                                    <input type="cardno" id="cardno" name="email">
                                     <small></small>
                                 </div>
 
@@ -127,7 +127,7 @@ if (isset($_POST['submit'])) {
         
                                     <div>
                                         <label for="cvv">CVV:</label>
-                                        <input type="text" id="cvv" name="cvv">
+                                        <input type="number" id="cvv" name="cvv">
                                         <small></small>
                                     </div>
                                 </div>

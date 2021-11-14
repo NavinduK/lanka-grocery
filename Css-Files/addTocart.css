@@ -72,7 +72,7 @@ table {
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
-    width: 70%;
+    width: 100%;
     background: rgba(#fafafa, 0.9);
     table-layout: fixed;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);

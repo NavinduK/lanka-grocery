@@ -53,6 +53,11 @@
 				$_SESSION['id'] = $row['user_id'];
 				$_SESSION['uname'] = $row['username'];
 				$_SESSION['name'] = $row['name'];
+				//if user is the admin, redirect to admin page
+				if ($row['username']=='admin@admin.com') {
+					$_SESSION['admin'] = 1;
+					header('location:admin_sales.php');
+				}
 				// if the login page requested from checkout page, redirect again to it else to home
 				if (isset($_GET['checkout'])) {
 					header('location:proceed.php');

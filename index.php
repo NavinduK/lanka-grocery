@@ -43,7 +43,7 @@
 
     <main>
         <!-- Menu Category -->
-        <section id="menu-section">
+        <section  id="menu-section">
             <div class="small-container">
                 <h2 class="title">Top Selling Products</h2>
                 <div class="row">
@@ -76,7 +76,7 @@
                 <h2>Our Latest Grocery Product</h2>
             </div>
 
-            <section class="latest-product-feature">
+            <section style="width: 100%;"  class="latest-product-feature">
                 <!-- loop the products fetched to display in home -->
                 <?php foreach ($products as $row) { ?>
                     <div class="product-item">

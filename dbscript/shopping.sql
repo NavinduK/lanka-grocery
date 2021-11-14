@@ -34,8 +34,9 @@ CREATE TABLE `history` (
   `address` varchar(255) DEFAULT NULL,
   `user_id` int DEFAULT NULL,
   `promo_code` varchar(10) DEFAULT NULL,
+  `delivered` int DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=42 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +45,7 @@ CREATE TABLE `history` (
 
 LOCK TABLES `history` WRITE;
 /*!40000 ALTER TABLE `history` DISABLE KEYS */;
-INSERT INTO `history` VALUES (41,'saman','',1234512455,'Coconut Milk :1,Maggi Noodles :1',760,'No123,colombo',4,'-');
+INSERT INTO `history` VALUES (41,'saman','saman@gmail.com',1234512455,'Coconut Milk :1,Maggi Noodles :1',760,'No.123,colombo',4,'-',0),(42,'Nimal','nimal@gmail.com',233413443,'Coconut Milk :2',695,'No.31,colombo',1,'-',1);
 /*!40000 ALTER TABLE `history` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,7 +90,7 @@ CREATE TABLE `products` (
   `availability` varchar(45) DEFAULT NULL,
   `imagePath` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`pid`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,7 +99,7 @@ CREATE TABLE `products` (
 
 LOCK TABLES `products` WRITE;
 /*!40000 ALTER TABLE `products` DISABLE KEYS */;
-INSERT INTO `products` VALUES (1,'Maggi Noodles ','New 73g',65,'In Stock','./images/product-images/Pic101501.jpg'),(2,'Coconut Milk ','Powder 300g',495,'In Stock','./images/product-images/Pic27617.jpg'),(3,'Red Dhal','500g Pack',147,'In Stock','./images/product-images/Pic8701.jpg'),(4,'Chillie Powder','100g Pack',108,'In Stock','./images/product-images/Pic42554.jpg');
+INSERT INTO `products` VALUES (3,'Red Dhal','500g Pack',147,'In Stock','./images/product-images/Pic8701.jpg'),(4,'Chillie Powder','100g Pack',108,'In Stock','./images/product-images/Pic42554.jpg'),(21,'Maggi Noodles ','New 73g',65,'In Stock','./images/product-images/Pic101501.jpg'),(22,'Coconut Milk ','Powder 300g',495,'In Stock','./images/product-images/Pic27617.jpg');
 /*!40000 ALTER TABLE `products` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -137,4 +138,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-06 17:28:27
+-- Dump completed on 2021-11-06 21:54:24
