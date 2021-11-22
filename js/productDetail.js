@@ -31,6 +31,14 @@ cartBtn.addEventListener('click', (e) => {
     addToCart(productObj)
 })
 
+// when admin on update 
+function updateForm(){
+    var upB = document.getElementById("update-form") 
+    var prB = document.getElementById("product-data")
+    upB.style.display = "block";
+    prB.style.display  = "none";
+}
+
 // add item to cart
 function addToCart(product) {
     console.log('prdct', product)

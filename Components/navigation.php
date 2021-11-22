@@ -6,6 +6,16 @@
             </div>
             <div class="search-container">
                 <div class="form-right">
+                    <?php 
+                        if (isset($_SESSION['admin'])) {
+                            echo "
+                            <p style='color: #FF9900;'>Admin Dashboard : </p>
+                            <button class='btn-tool-tip'>
+                                <a href='./admin_new_sales.php'> <i class='fa fa-users-cog'></i></a>
+                            </button>
+                            ";
+                        }
+                    ?>
                     <p style="color: #FF9900;">User area : </p>
                     <?php 
                     // Show login button only if user not logged, else show logout button
