@@ -6,36 +6,36 @@
             </div>
             <div class="search-container">
                 <div class="form-right">
-                    <?php 
-                        if (isset($_SESSION['admin'])) {
-                            echo "
+                    <?php
+                    if (isset($_SESSION['admin'])) {
+                        echo "
                             <p style='color: #FF9900;'>Admin Dashboard : </p>
                             <button class='btn-tool-tip'>
                                 <a href='./admin_new_sales.php'> <i class='fa fa-users-cog'></i></a>
                             </button>
                             ";
-                        }
+                    }
                     ?>
                     <p style="color: #FF9900;">User area : </p>
-                    <?php 
+                    <?php
                     // Show login button only if user not logged, else show logout button
                     //  Done by cecking users id on session 
-                        if(isset($_SESSION['id'])){
-                            // logout button shown
-                            echo "
+                    if (isset($_SESSION['id'])) {
+                        // logout button shown
+                        echo "
                                 <button class='btn-tool-tip'>
                                     <a href='./logout.php'><i class='fa fa-sign-out'></i></a>
                                 </button>
                             ";
-                        }else{
-                            // login button shown
-                            echo "
+                    } else {
+                        // login button shown
+                        echo "
                                 <button class='btn-tool-tip'>
                                     <a href='./Login.php'>
                                         <i class='fas fa-user-circle'></i></a>
                                 </button>
                             ";
-                        }
+                    }
 
                     ?>
                 </div>
@@ -50,6 +50,10 @@
 
             <i class="fas fa-baRM"></i>
 
+            <form class="search-form" action="./shop.php" method="post">
+                <input class="inSearch" type="text" name="search">
+                <input class="inSearchBtn" type="submit" name="submitSearch" value="Search">
+            </form>
         </div>
 
     </header>

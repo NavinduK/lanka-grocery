@@ -90,6 +90,21 @@ form .header i{
   outline: none;
 }
 
+
+
+.form-control-add input {
+  box-sizing: border-box;
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+  width: 100%;
+  border-bottom: 2px solid #FF6600;
+  outline: none;
+}
+
 .form-flex{
   display: flex;
   justify-content: left;

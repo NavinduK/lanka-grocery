@@ -33,10 +33,16 @@ cartBtn.addEventListener('click', (e) => {
 
 // when admin on update 
 function updateForm(){
-    var upB = document.getElementById("update-form") 
-    var prB = document.getElementById("product-data")
+    var upB = document.getElementById("update-form");
+    var prB = document.getElementById("product-data");
     upB.style.display = "block";
     prB.style.display  = "none";
+}
+
+// when admin on add new 
+function addForm(){
+    var upB = document.getElementById("add-form");
+    upB.style.display = "block";
 }
 
 // add item to cart

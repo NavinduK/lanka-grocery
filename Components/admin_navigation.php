@@ -41,6 +41,14 @@
                 </div>
             </div>
         </div>
+        <div class="midNavA">
+            <!-- nav bar menu -->
+            <div></div>
+            <form style="margin-left: auto;" class="search-form" action="./shop.php" method="post">
+                <input class="inSearch" type="text" name="search">
+                <input class="inSearchBtn" type="submit" name="submit" value="Search">
+            </form>
+        </div>
     </header>
     <!-- Header Ends -->
 
